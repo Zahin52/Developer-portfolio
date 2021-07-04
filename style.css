@@ -5,14 +5,16 @@ body {
   scroll-behavior: smooth;
 }
 
-.flex-content {
+.flex-content{
   display: flex;
   padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .half-width {
-  width: 50%;
+  width: 40%;
   padding: 0 20px;
-  margin-left:10px;
+  margin-left:50px;
 }
 .half-width img {
   /* position: relative;
@@ -58,6 +60,7 @@ button:hover{
 }
 section{
     height: 100vh;
+    /* margin-bottom: 20px; */
 }
 .top-banner{
 
@@ -76,4 +79,53 @@ section{
     background-repeat: no-repeat;
     background-attachment:fixed;
    
+}
+.experience-title{
+    text-align: center;
+    font-size: 50px;   
+}
+.card-heading{
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    /* color:orange; */
+    font-weight: 700;
+}
+.card{
+    padding: 20px 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    width: 40%;
+    height: 16em;
+    box-shadow:
+    2px 5px 17px 2px #dcd3d3;
+    border-radius: 10px;
+        
+}
+.border-left-blue{
+    border-left:5px solid blue;
+}
+.border-left-orange {
+    border-left: 5px solid orange;
+}
+.card-title{
+    color: orange;
+    font-size: 20px;
+}
+.card:hover{
+    transform:scale(.99);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1.5s;
+}
+@media (max-width:1270px) {
+    .card {
+        width: 30%;        
+    }
+
+}
+@media (max-width:900px) {
+    .card{
+        width: 100%;
+    }
+    
 }
