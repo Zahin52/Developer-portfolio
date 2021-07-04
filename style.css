@@ -24,6 +24,7 @@ body {
   position: relative;
   top:4%;
   width: 80%;
+
 }
 .half-width h1 {
   font-weight: 900;
@@ -51,7 +52,7 @@ button{
     
     text-transform: capitalize;
     color:white;
-    font-size: 2em;
+    font-size: 1.3em;
     border: none;
     cursor: pointer;
 }
@@ -61,6 +62,7 @@ button:hover{
 .top-banner{
     height: 100vh;    
     background-image: url(./Images/key.jpg);
+    padding: 10px 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,14 +84,14 @@ button:hover{
     font-size: 3em;   
 }
 .card-heading{
-    font-size: 2.5em;
+    font-size: 2.2em;
     margin-top: 5px;
     margin-bottom: 25px;
     /* color:orange; */
     font-weight: 700;
 }
 .card{
-    padding: 20px 20px;
+    padding: 20px 20px 30px;
     margin-left: 10px;
     margin-bottom: 30px;
     width: 45%;
@@ -107,7 +109,10 @@ button:hover{
 }
 .card-title{
     color: orange;
-    font-size: 20px;
+    font-size: 1.5em;
+}
+.card-text{
+    font-size: 1.2em;
 }
 .card:hover{
     transform:scale(.99);
@@ -168,7 +173,9 @@ button:hover{
         height: auto !important;
        
     }
-   
+   body {
+       font-size: 85%;
+   }
 
 }
 @media (max-width:900px) {
