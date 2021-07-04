@@ -1,31 +1,37 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
+
 .flex-content {
   display: flex;
-  margin: 10px;
   padding: 10px;
 }
 .half-width {
   width: 50%;
-  padding: 15px;
-  margin: 10px;
+  padding: 0 20px;
+  margin-left:10px;
 }
 .half-width img {
-  position: relative;
-  top: 20%;
+  /* position: relative;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
+  transform: translate(-50%, -75%); */
+  position: relative;
+  top:4%;
+  width: 80%;
 }
 .half-width h1 {
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 900;
+  font-size: 50px;
 }
 .orange {
   color: orange;
+}
+.blue{
+    color: cornflowerblue;
 }
 .title {
   font-weight: 900;
@@ -49,4 +55,25 @@ button{
 }
 button:hover{
     background-image:linear-gradient(90deg,tomato,orange);
+}
+section{
+    height: 100vh;
+}
+.top-banner{
+
+    background-image: url(./Images/key.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.middle-section {
+
+    background-image: url(./Images/handcap.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+   
 }
