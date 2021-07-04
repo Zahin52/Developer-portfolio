@@ -3,3 +3,27 @@ body{
     padding: 0;
     font-family: 'Poppins',sans-serif;
 }
+.flex-content{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+.half-width{
+    width: 50%;
+    padding: 15px;
+    margin: 10px;
+}
+.half-width img{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+.half-width h1{
+    font-weight: 700;
+    font-size: 45px;
+}
+.orange{
+    color:orange;
+}
