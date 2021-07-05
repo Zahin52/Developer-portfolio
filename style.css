@@ -46,19 +46,18 @@ Some common css
   color: dimgray;
   text-align: justify;
 }
-button{
+.button{
     background-image:linear-gradient(orange,tomato);
     border-radius: 5px;
-    
-    padding:10px 40px;
-    
+    text-decoration: none;
+    padding:10px 40px;    
     text-transform: capitalize;
     color:white;
     font-size: 1.3em;
     border: none;
     cursor: pointer;
 }
-button:hover{
+.button:hover{
     background-image:linear-gradient(90deg,tomato,orange);
 }
 
