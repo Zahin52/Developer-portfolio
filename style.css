@@ -95,7 +95,7 @@ button:hover{
     margin-left: 10px;
     margin-bottom: 30px;
     width: 45%;
-    height: 16em;
+    height: auto;
     box-shadow:
     2px 5px 17px 2px #dcd3d3;
     border-radius: 10px;
@@ -112,7 +112,7 @@ button:hover{
     font-size: 1.5em;
 }
 .card-text{
-    font-size: 1.2em;
+    font-size: 1.15em;
 }
 .card:hover{
     transform:scale(.99);
