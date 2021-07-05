@@ -5,9 +5,11 @@ body {
     scroll-behavior: smooth;
 }
 
-/* section{
-    height: 100vh;
-} */
+/* 
+##########################
+Some common css
+########################## 
+*/
 .flex-content{
   display: flex;
   padding: 10px;
@@ -59,6 +61,13 @@ button{
 button:hover{
     background-image:linear-gradient(90deg,tomato,orange);
 }
+
+
+/* 
+##########################
+Top section css
+########################## 
+*/
 .top-banner{
     height: 100vh;    
     background-image: url(./Images/key.jpg);
@@ -69,6 +78,13 @@ button:hover{
     background-attachment: fixed;
 
 }
+
+
+/* 
+##########################
+middle section css
+########################## 
+*/
 
 .middle-section {
     height: auto;
@@ -83,13 +99,12 @@ button:hover{
     text-align: center;
     font-size: 3em;   
 }
-.card-heading{
-    font-size: 2.2em;
-    margin-top: 5px;
-    margin-bottom: 25px;
-    /* color:orange; */
-    font-weight: 700;
-}
+
+/* 
+##########################
+Card related css
+########################## 
+*/
 .card{
     padding: 20px 20px 30px;
     margin-left: 10px;
@@ -99,7 +114,27 @@ button:hover{
     box-shadow:
     2px 5px 17px 2px #dcd3d3;
     border-radius: 10px;
-        
+    
+}
+.card-title{
+    color: orange;
+    font-size: 1.5em;
+}
+.card-text{
+    font-size: 1.05em;
+    color: dimgray;
+}
+.card:hover{
+    transform:scale(.95);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1.5s;
+}
+.card-heading{
+    font-size: 2.2em;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    /* color:orange; */
+    font-weight: 700;
 }
 .border-left-blue{
     border-left:5px solid blue;
@@ -107,18 +142,12 @@ button:hover{
 .border-left-orange {
     border-left: 5px solid orange;
 }
-.card-title{
-    color: orange;
-    font-size: 1.5em;
-}
-.card-text{
-    font-size: 1.15em;
-}
-.card:hover{
-    transform:scale(.99);
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    transition-duration: 1.5s;
-}
+
+/* 
+##########################
+Footer section css
+########################## 
+*/
 .footer{
     height: auto;
     /* background-color: #f5d020; */
@@ -158,6 +187,13 @@ button:hover{
     
     margin-right: 10px;
 }
+
+
+/* 
+##########################
+media query max-width:1200 css
+########################## 
+*/
 @media (max-width:1200px) {
     .card {
         width: 40%;  
@@ -182,6 +218,12 @@ button:hover{
    }
 
 }
+
+/* 
+##########################
+media query max-width:900 css
+########################## 
+*/
 @media (max-width:900px) {
     .card{
         width: 100%;
