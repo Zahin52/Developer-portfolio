@@ -10,74 +10,77 @@ body {
 Some common css
 ########################## 
 */
-.flex-content{
-  display: flex;
-  padding: 10px;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.flex-content {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.half-width {
-  width: 40%;
-  padding: 0 20px;
-  margin-left:50px;
-}
-.half-width img {
-  
-  position: relative;
-  top:4%;
-  width: 80%;
 
+.half-width {
+    width: 40%;
+    padding: 0 20px;
+    margin-left: 50px;
 }
+
+.half-width img {
+    display: block;
+    width: 80%;
+}
+
 .half-width h1 {
-  font-weight: 900;
-  font-size: 3em;
+    font-weight: 900;
+    font-size: 3em;
 }
+
 .orange {
-  color: orange;
+    color: orange;
 }
-.blue{
+
+.blue {
     color: cornflowerblue;
 }
+
 .title {
-  font-weight: 900;
-  font-size: 2em;
+    font-weight: 900;
+    font-size: 2em;
 }
+
 .details {
-  color: dimgray;
-  text-align: justify;
+    color: dimgray;
+    text-align: justify;
 }
-.button{
-    background-image:linear-gradient(orange,tomato);
+
+.button {
+    background-image: linear-gradient(orange, tomato);
     border-radius: 5px;
     text-decoration: none;
-    padding:10px 40px;    
+    padding: 10px 40px;
     text-transform: capitalize;
-    color:white;
+    color: white;
     font-size: 1.3em;
     border: none;
     cursor: pointer;
 }
-.button:hover{
-    background-image:linear-gradient(90deg,tomato,orange);
-}
 
+.button:hover {
+    background-image: linear-gradient(90deg, tomato, orange);
+}
 
 /* 
 ##########################
 Top section css
 ########################## 
 */
-.top-banner{
-    height: 100vh;    
+.top-banner {
+    height: 100vh;
     background-image: url(./Images/key.jpg);
     padding: 10px 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
-
 
 /* 
 ##########################
@@ -88,15 +91,16 @@ middle section css
 .middle-section {
     height: auto;
     background-image: url(./Images/handcap.jpg);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment:fixed;
-   
+    background-attachment: fixed;
+    padding: 25px;
 }
-.experience-title{
+
+.experience-title {
     text-align: center;
-    font-size: 3em;   
+    font-size: 3em;
 }
 
 /* 
@@ -104,40 +108,44 @@ middle section css
 Card related css
 ########################## 
 */
-.card{
+.card {
     padding: 20px 20px 30px;
     margin-left: 10px;
     margin-bottom: 30px;
     width: 45%;
     height: auto;
-    box-shadow:
-    2px 5px 17px 2px #dcd3d3;
+    box-shadow: 2px 5px 17px 2px #dcd3d3;
     border-radius: 10px;
-    
 }
-.card-title{
+
+.card-title {
     color: orange;
     font-size: 1.5em;
 }
-.card-text{
+
+.card-text {
     font-size: 1.05em;
     color: dimgray;
 }
-.card:hover{
-    transform:scale(.95);
+
+.card:hover {
+    transform: scale(0.95);
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-duration: 1.5s;
 }
-.card-heading{
+
+.card-heading {
     font-size: 2.2em;
     margin-top: 5px;
     margin-bottom: 25px;
     /* color:orange; */
     font-weight: 700;
 }
-.border-left-blue{
-    border-left:5px solid blue;
+
+.border-left-blue {
+    border-left: 5px solid blue;
 }
+
 .border-left-orange {
     border-left: 5px solid orange;
 }
@@ -147,29 +155,32 @@ Card related css
 Footer section css
 ########################## 
 */
-.footer{
+.footer {
     height: auto;
     /* background-color: #f5d020; */
-    background-image:url("./Images/5570840.jpg");
+    background-image: url("./Images/5570840.jpg");
     background-size: cover;
     color: white;
     margin: 0;
     padding: 20px;
 }
-.copyright{
+
+.copyright {
     text-align: center;
     font-size: medium;
     font-weight: bold;
     margin: 10px 0;
 }
-.about-me h3{
+
+.about-me h3 {
     font-size: 2.5em;
     font-weight: 900;
 }
-.about-me p{
+
+.about-me p {
     text-align: justify;
-    
 }
+
 .find-me h3 {
     font-size: 2.5em;
     font-weight: 900;
@@ -178,44 +189,52 @@ Footer section css
 .find-me p {
     text-align: justify;
 }
-.find-me a{
+
+.find-me a {
     list-style: none;
     color: white;
 }
-.mr-3{
-    
+
+.mr-3 {
     margin-right: 10px;
 }
-
 
 /* 
 ##########################
 media query max-width:1200 css
 ########################## 
 */
-@media (max-width:1200px) {
-    .card {
-        width: 40%;  
-        margin-right: 10px;      
+@media (max-width: 1200px) {
+    .half-width img {
+
+        margin: auto;
     }
-    .middle-section{
+
+    .card {
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .middle-section {
         height: auto;
     }
-    .half-width{
+
+    .half-width {
         width: 100%;
     }
-    .top-banner{
-        height: auto !important;
-       
-    }
-   body {
-       font-size: 85%;
-   }
-   .half-width{
-       margin-left:auto;
-       margin-right: auto;
-   }
 
+    .top-banner {
+        height: auto !important;
+    }
+
+    body {
+        font-size: 85%;
+    }
+
+    .half-width {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* 
@@ -223,12 +242,13 @@ media query max-width:1200 css
 media query max-width:900 css
 ########################## 
 */
-@media (max-width:900px) {
-    .card{
+@media (max-width: 900px) {
+    .card {
         width: 100%;
         margin-right: 10px;
     }
-     body {
-         font-size: 75%;
-     }
+
+    body {
+        font-size: 75%;
+    }
 }
